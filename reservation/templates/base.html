@@ -15,11 +15,17 @@
 <body>
     <div class="container">
 
-        <div class="row text-center" style="padding-top:10px">
-            <div class="col">
+        <div class="row" style="padding-top:10px">
+            <div class="col-lg-1 col-lg-offset-1    mx-auto">
                 <a href="{%url 'index'%}"><img src="{%static 'reservation/logo.png'%}" width="70" height="70">
 
                 </a>
+
+            </div>
+            <div class="col-lg-1">
+                <form action="{%url 'login'%}">
+                    <button type="submit" class="btn btn-dark w-10 ml-auto">logout</button><br>
+                </form>
             </div>
         </div>
         <div class="row ">
